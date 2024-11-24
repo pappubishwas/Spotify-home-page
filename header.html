@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space images inside the logo */
+        width: 30%; /* Set width to 30% of the container */
+      }
+
+      .home {
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .logo img {
+        width: 2.7rem;
+        height: 2.7rem;
+      }
+
+      .inp {
+        flex-grow: 1; /* Makes the input section take available space */
+        margin-left: 20px; /* Adds spacing from the logo */
+        margin-right: 20px; /* Adds spacing before buttons */
+      }
+
+      .inp input {
+        width: 60%;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #282828;
+        padding-left: 10px;
+        color: white;
+        border: none;
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px; /* Space between buttons */
+      }
+      #signup{
+        color: rgb(149, 144, 144);
+        background-color: #000000;
+      }
+
+      .actions button {
+        background-color: white;
+        border-radius: 25px;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="images/Spotify_Primary_Logo_RGB_White.png"
+        alt="Spotify Logo"
+      />
+      <img class="home" src="images/home_circle_icon.webp" alt="Home Icon" />
+    </div>
+    <div class="inp">
+      <input name="song" placeholder="Search Your Song" />
+    </div>
+    <div class="actions">
+      <button id="signup">Sign Up</button>
+      <button>Log In</button>
+    </div>
+  </body>
+</html>

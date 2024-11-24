@@ -1,0 +1,70 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr; /* Header takes 80px, body takes remaining space */
+    background-color: #181818;
+    color: white;
+    overflow: hidden; /* Prevent scrolling on the whole body */
+  }
+  
+  /* Spotify Layout */
+  .spotify-container {
+    display: grid;
+    grid-template-rows: 80px 1fr; /* Header fixed height, body takes remaining space */
+    height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    height: 80px;
+    background-color: #181818;
+  }
+  
+  /* Ensure iframe fills the header space */
+  .header iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Body Container */
+  .body-container {
+    display: flex; /* Flex layout to make it row-wise */
+    height: 100%; /* Full height of the container */
+    
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 32%; /* Fixed width for the sidebar */
+    background-color: #121212;
+    height: 100vh; /* Sidebar takes full height */
+    overflow: hidden; /* Ensure no scrolling in sidebar */
+  }
+  
+  .sidebar iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Main Content */
+  .main-content-wrapper {
+    flex-grow: 1; /* Expand to take available space */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Add vertical scrolling */
+    position: relative;
+    background-color: #282828;
+    overflow-y: hidden;
+    
+  }
+  
